@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # nuxt-todo
 
 > My slick Nuxt.js project
@@ -20,3 +21,6 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+=======
+# nuxt-firebase-todo
+>>>>>>> origin/master
