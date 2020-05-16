@@ -38,7 +38,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ['@nuxtjs/dotenv'],
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
@@ -46,7 +46,6 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
       themes: {
         dark: {
           primary: colors.blue.darken2,
