@@ -1,3 +1,5 @@
+process.env.FIRESTORE_EMULATOR_HOST = 'localhost:58080'
+
 const fs = require('fs')
 const firebase = require('@firebase/testing')
 
