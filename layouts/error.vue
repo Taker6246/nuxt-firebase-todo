@@ -1,20 +1,36 @@
 <template>
-  <v-app dark>
-    <h1 v-if="error.statusCode === 404">
-      {{ pageNotFound }}
-    </h1>
-    <h1 v-else>
-      {{ otherError }}
-    </h1>
-    <NuxtLink to="/">
-      Home page
-    </NuxtLink>
+  <v-app id="inspired">
+    <TheHeading />
+    <v-content color="light-blue darken-4">
+      <v-container fluid>
+        <v-row align="center" justify="center">
+          <v-flex v-if="error.statusCode === 404" tag="h1">
+            {{ pageNotFound }}
+          </v-flex>
+          <v-flex v-else tag="h1">
+            {{ otherError }}
+          </v-flex>
+        </v-row>
+        <v-row>
+          <NuxtLink to="/">
+            Home page
+          </NuxtLink>
+        </v-row>
+      </v-container>
+    </v-content>
+
+    <v-footer app />
   </v-app>
 </template>
 
 <script>
+import TheHeading from '~/components/TheHeading.vue'
+
 export default {
   layout: 'empty',
+  components: {
+    TheHeading
+  },
   props: {
     error: {
       type: Object,
@@ -39,6 +55,6 @@ export default {
 
 <style scoped>
 h1 {
-  font-size: 20px;
+  font-size: 40px;
 }
 </style>

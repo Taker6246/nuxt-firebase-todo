@@ -1,7 +1,7 @@
 <template>
-  <v-app id="inspire">
+  <div>
     <v-navigation-drawer
-      v-model="drawer"
+      v-if="drawer"
       :clipped="$vuetify.breakpoint.lgAndUp"
       app
     >
@@ -57,15 +57,11 @@
         </template>
       </v-list>
     </v-navigation-drawer>
-  </v-app>
+  </div>
 </template>
 
 <script>
 export default {
-  props: {
-    // eslint-disable-next-line vue/require-default-prop
-    drawer: null
-  },
   data: () => ({
     items: [
       {
@@ -89,6 +85,11 @@ export default {
       { icon: 'mdi-settings', text: '設定' },
       { icon: 'mdi-help-circle', text: 'ヘルプ' }
     ]
-  })
+  }),
+  computed: {
+    drawer() {
+      return this.$store.getters.stateDrawer
+    }
+  }
 }
 </script>
