@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 # nuxt-todo
 
 > My tremendous Nuxt.js project
+=======
+<<<<<<< HEAD
+# nuxt-todo
+
+> My slick Nuxt.js project
+>>>>>>> origin/master
 
 ## Build Setup
 
@@ -20,3 +27,9 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+<<<<<<< HEAD
+=======
+=======
+# nuxt-firebase-todo
+>>>>>>> origin/master
+>>>>>>> origin/master
