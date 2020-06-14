@@ -12,8 +12,8 @@
           </v-flex>
         </v-row>
         <v-row>
-          <NuxtLink to="/">
-            Home page
+          <NuxtLink to="/" class="togohome" exact>
+            > Home
           </NuxtLink>
         </v-row>
       </v-container>
@@ -55,6 +55,9 @@ export default {
 
 <style scoped>
 h1 {
+  font-size: 40px;
+}
+.togohome {
   font-size: 40px;
 }
 </style>

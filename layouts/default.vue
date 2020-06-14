@@ -8,6 +8,7 @@
         </v-row>
       </v-container>
     </v-content>
+    <v-footer app />
   </v-app>
 </template>
 <script>

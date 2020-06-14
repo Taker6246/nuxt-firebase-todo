@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <!-- メインコンテンツ -->
+    {{ test }}
   </v-app>
 </template>
 
@@ -11,7 +12,9 @@ export default {
     source: String
   },
   data() {
-    return {}
+    return {
+      test: 'TEST'
+    }
   }
 }
 </script>
